@@ -1,9 +1,9 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
+import { media } from "./utilities/css_util";
+import { injectGlobal } from "@emotion/css";
 
 import App from "./views/App";
-import { injectGlobal } from "@emotion/css";
-import { media } from "./utilities/css_util";
 
 injectGlobal({
     "*": {

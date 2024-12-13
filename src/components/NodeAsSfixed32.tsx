@@ -1,8 +1,10 @@
 import { createMemo, createSignal, JSXElement, Show } from "solid-js";
 import { ProtoBufNode } from "../utilities/n_protobuf_decode/node";
-import NodeAsXStyles from "../components.styles/NodeAsX.styles";
-import Button from "./Button";
 import { cx } from "@emotion/css";
+
+import NodeAsXStyles from "../components.styles/NodeAsX.styles";
+
+import Button from "./Button";
 
 export default (props: { node: ProtoBufNode }): JSXElement => {
     const result = createMemo(() => props.node.tryAsSfixed32());

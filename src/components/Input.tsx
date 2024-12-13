@@ -1,6 +1,9 @@
 import { createMemo, For, JSXElement, onCleanup, onMount } from "solid-js";
+
 import { cx } from "@emotion/css";
+
 import { editable } from "edix";
+
 import InputStyles from "../components.styles/Input.styles";
 
 export default (props: { class?: string; value: string; "on:change": (text: string) => void }): JSXElement => {

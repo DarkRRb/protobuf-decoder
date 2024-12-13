@@ -1,7 +1,5 @@
 import { JSXElement, Match, Switch } from "solid-js";
-
 import { hexCheck, hexToBytes } from "../utilities/hex_util";
-
 import { decode } from "../utilities/n_protobuf_decode/decoder";
 import { WireType } from "../utilities/n_protobuf_decode/wire_type";
 
