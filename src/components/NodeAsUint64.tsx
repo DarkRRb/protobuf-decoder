@@ -25,7 +25,7 @@ export default (props: { node: ProtoBufNode }): JSXElement => {
         <Show when={isSucceed()}>
             <div class={NodeAsXStyles.Prefix} />
             <Button class={cx(NodeAsXStyles.ButtonLeft, { hidden: !isShow() })} on:click={leftButtonClickHandler}>
-                Sfixed64
+                Uint64
             </Button>
             <Show when={isShow()}>
                 <div class={NodeAsXStyles.Middle} />
